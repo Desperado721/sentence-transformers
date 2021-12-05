@@ -627,7 +627,7 @@ class SentenceTransformer(nn.Sequential):
         self.to(self._target_device)
 
         dataloaders = [dataloader for dataloader, _ in train_objectives]
-        print('630', next(dataloaders[0]))
+        print('630', dataloaders[0])
 
         # Use smart batching
         for dataloader in dataloaders:
